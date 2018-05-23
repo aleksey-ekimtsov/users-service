@@ -1,0 +1,19 @@
+version: '2'
+services:
+  users-app:
+    image: users-app
+    ports:
+    - "8080:8080"
+    depends_on:
+    - users-db-mysql
+
+  users-db-mysql:
+    image: mysql/mysql-server:5.7
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: aekimtsov
+      MYSQL_PASSWORD: aekimtsov
+      MYSQL_DATABASE: testdb
