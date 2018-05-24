@@ -45,7 +45,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -57,20 +56,15 @@
             <version>2.7.0</version>
         </dependency>
 
-
         <!-- Test dependencies -->
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test-autoconfigure</artifactId>
-
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -157,7 +151,7 @@
                                         </env>
                                         <wait>
                                             <log>(?s)MySQL init process done. Ready for start up</log>
-                                            <time>20000</time>
+                                            <time>120000</time>
                                         </wait>
                                     </run>
                                 </image>
