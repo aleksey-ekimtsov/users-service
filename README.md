@@ -1,4 +1,5 @@
-#users-service
+users-service
+-
 users-service is demo project that includes a following technologies and frameworks:
 * maven
 * spring-boot
