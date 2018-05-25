@@ -11,7 +11,12 @@ users-service is demo project that includes a following technologies and framewo
 * IT using docker
 
 
-To build and run project you need installed JDK8, Docker and Maven. Start Docker, execute:
+To build and run project you need installed JDK8, Docker and Maven.
+First, set up `it-database.host` property in `pom.xml` file.  
+  
+     <it-database.host>localhost</it-database.host>
+     
+ Start Docker, execute:
     
     mvn clean install
 
