@@ -27,7 +27,6 @@
     </properties>
 
 
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -155,10 +154,10 @@
                                             <MYSQL_USER>aekimtsov</MYSQL_USER>
                                             <MYSQL_PASSWORD>aekimtsov</MYSQL_PASSWORD>
                                         </env>
-                                        <wait>
-                                            <log>(?s)MySQL init process done. Ready for start up</log>
-                                            <time>120000</time>
-                                        </wait>
+                                        <!--  <wait>
+                                              <log>(?s)MySQL init process done. Ready for start up</log>
+                                              <time>120000</time>
+                                          </wait>-->
                                     </run>
                                 </image>
                             </images>

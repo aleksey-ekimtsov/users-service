@@ -51,7 +51,6 @@ public class UserRepositoryIT {
 
     @Test
     public void test1() {
-
         final String NAME = "Aleksey Ekimtsov";
         final Date BIRTH_DATE = new Calendar.Builder().setDate(1986, 10, 17).build().getTime();
         final String EMAIL = "aleksey.ekimtsov@gmal.com";
@@ -69,10 +68,5 @@ public class UserRepositoryIT {
         Assert.assertTrue(all.get(0).getName().equals(NAME));
         Assert.assertTrue(all.get(0).getEmail().equals(EMAIL));
         Assert.assertTrue(all.get(0).getBirthDate().equals(BIRTH_DATE));
-
-////        // data-id.sql creates on registration with id "1"
-////        final EventEntity event = this.userRepository.findOne(1).get();
-////        final RegistrationEntity savedRegistration = this.registrationRepository.save(new RegistrationEntity(event, "foo@bar.baz", "idGeneratorsShouldWorkWithPostgreSQLAsExpected", null, true));
-//        Assert.assertThat(savedRegistration.getId(), is(2));
     }
 }
